@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Slacker Career</title>
+  </head>
+  <body>
+    <h1>Slacker Careers</h1>
+    <img src="https://python-web-tut-1.adarshkumar64.repl.co/static/banner.jpg" alt="banner" height="320px" width="650px"/>
+    <h2>About Slacker</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum commodi
+      nesciunt laborum nobis incidunt fuga voluptatem voluptates minus cumque.
+      Totam, iusto sint quia itaque accusantium corporis vero velit expedita
+      aperiam.
+    </p>
+    <h2>Open Positions</h2>
+    <div>
+      {%for job in jobs%}
+        {%include 'jobitem.html'%}
+      {%endfor%}
+    </div>
+    <button>Contact Us</button>
+  </body>
+</html>
